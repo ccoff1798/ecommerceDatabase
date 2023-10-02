@@ -40,8 +40,7 @@ Product.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'category',
-        key: 'id',
-        unique: false
+        key: 'id'
       }
       
     }
@@ -59,9 +58,6 @@ Product.init(
 
 module.exports = Product;
 
-const Category = require('./Category');
-Product.belongsTo(Category, {
-  foreignKey: 'category_id',
-}); 
 
-const Tag = require('./Tag')
+
+

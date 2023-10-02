@@ -33,7 +33,4 @@ Category.init(
 );
 
 module.exports = Category;
-const Product = require('./Product')
-Category.hasMany(Product, {
-  foreignKey: 'category_id',
-});
+
